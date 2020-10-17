@@ -238,6 +238,9 @@ generate_terms_for_names! {
     /// Represents the terminal symbol `true`
     True => "true",
 
+    /// Represents the terminal symbol `undefined`
+    Undefined => "undefined",
+
     /// Represents the terminal symbol `unsigned`
     Unsigned => "unsigned",
 
@@ -493,6 +496,9 @@ macro_rules! term {
     (true) => {
         $crate::term::True
     };
+    (undefined) => {
+        $crate::term::Undefined
+    };
     (unsigned) => {
         $crate::term::Unsigned
     };
@@ -674,6 +680,7 @@ mod test {
         sequence, Sequence, "sequence";
         short, Short, "short";
         true_, True, "true";
+        undefined, Undefined, "undefined";
         unsigned, Unsigned, "unsigned";
         void, Void, "void";
         record, Record, "record";

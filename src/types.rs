@@ -22,6 +22,7 @@ ast_types! {
         Promise(PromiseType<'a>),
         Integer(MayBeNull<IntegerType>),
         FloatingPoint(MayBeNull<FloatingPointType>),
+        Undefined(term!(undefined)),
         Boolean(MayBeNull<term!(boolean)>),
         Byte(MayBeNull<term!(byte)>),
         Octet(MayBeNull<term!(octet)>),
